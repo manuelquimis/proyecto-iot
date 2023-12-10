@@ -39,7 +39,7 @@ const LatestDataCard = () => {
 
     // Llamar a la función de búsqueda inicial y configurar la actualización periódica (cada segundo, por ejemplo)
     fetchLatestId();
-    const intervalId = setInterval(fetchLatestId, 1000);
+    const intervalId = setInterval(fetchLatestId, 5000);
 
     // Limpiar el intervalo cuando el componente se desmonta
     return () => clearInterval(intervalId);

@@ -58,7 +58,7 @@ const SensorChart = ({ sensorDataKeys, label }) => {
           };
         });
 
-        setTimeout(fetchData, 1000);
+        setTimeout(fetchData, 100);
       } catch (error) {
         console.error("Error fetching sensor data:", error);
         // Manejar el error aquí, y luego volver a intentar después de un tiempo

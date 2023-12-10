@@ -39,22 +39,24 @@ const App = () => {
           <LatestDataCard />
           {/* <div> */}
           <StyledContainer>
-            <p>
-              {" "}
-              <strong>Representación Gráfica de Datos: </strong> Sensor
-              Giróscopio{" "}
-            </p>
-            <SensorChart
-              sensorDataKeys={["GyroZ", "GyroY", "GyroX"]}
-              label="Gyro"
-            />
-          </StyledContainer>
-          <StyledContainer>
-            <p> <strong>Representación Gráfica de Datos: </strong> Sensor Acelerómetro </p>
+          <p> <strong>Representación Gráfica de Datos: </strong> Sensor Giróscopio </p>
             <SensorChart
               sensorDataKeys={["AccZ", "AccY", "AccX"]}
-              label="Acc"
+              label="Gyro"
+              // sensorDataKeys={["AccZ", "AccY", "AccX"]}
+              // label="Acc"
+
             />
+          </StyledContainer>
+
+          <StyledContainer>
+          <p> <strong>Representación Gráfica de Datos: </strong> Sensor Acelerómetro </p>
+            <SensorChart
+              // sensorDataKeys={["AccZ", "GyroY", "AccX"]}
+              sensorDataKeys={["GyroZ", "GyroY", "GyroX"]}
+              label="Acc"
+              // label="Gyro"
+              />
           </StyledContainer>
 
           {/* </div> */}
